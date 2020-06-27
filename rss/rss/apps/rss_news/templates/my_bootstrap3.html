@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 {% load bootstrap3 %}
 <html{% if LANGUAGE_CODE %} lang="{{ LANGUAGE_CODE }}"{% endif %}>
@@ -16,9 +17,9 @@
     <![endif]-->
     {% if 'javascript_in_head'|bootstrap_setting %}{% bootstrap_javascript jquery=True %}{% endif %}
     {% block bootstrap3_extra_head %}{% endblock %}
-    <link href="/rss/apps/rss_news/static/fontawesome-free-5.13.1-web/css/fontawesome.css" type="text/css" rel="stylesheet">
-    <link href="/rss/apps/rss_news/static/bootstrap-4.5.0-dist/css/bootstrap.css" type="text/css" rel="stylesheet">
-    <link href="/rss/apps/rss_news/static/style.css" type="text/css" rel="stylesheet">
+    <link href={% static "fontawesome-free-5.13.1-web/css/fontawesome.css" %} type="text/css" rel="stylesheet">
+    <link href={% static "bootstrap-4.5.0-dist/css/bootstrap.css" %} type="text/css" rel="stylesheet">
+    <link href={% static "style.css" %} type="text/css" rel="stylesheet">
 </head>
 
 <body>
