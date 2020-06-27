@@ -16,7 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from rss.apps.rss_news import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('rss_news/', include('rss.apps.rss_news.urls'))
+    path('rss_news/', include('rss.apps.rss_news.urls')),
+    path('post/<int:rss_news_id>/', views.post)
 ]
