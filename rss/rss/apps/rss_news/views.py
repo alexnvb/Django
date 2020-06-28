@@ -24,3 +24,6 @@ def post(request,rss_news_id):
         result = " Net takogo posta"
 
     return HttpResponse(str(result))
+
+def signup (request):
+    return render(request, "signup.html")

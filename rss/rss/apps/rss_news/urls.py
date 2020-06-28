@@ -18,5 +18,6 @@ from django.urls import path
 from rss.apps.rss_news import views
 
 urlpatterns = [
-    path('index/', views.index, name='index')
+    path('index/', views.index, name='index'),
+    path('signup/', views.signup, name='signup')
 ]
