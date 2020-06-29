@@ -1,0 +1,4 @@
+
+*.pyc
+rss/rss/apps/rss_news/__pycache__/models.cpython-38.pyc
+*.pyc
