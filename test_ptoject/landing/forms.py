@@ -4,5 +4,5 @@ from .models import *
 class SubscribersForm(forms.ModelForm):
 
     class Meta:
-        model = Subscribers
+        model = Subscriber
         exclude = [""]
