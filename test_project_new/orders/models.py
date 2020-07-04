@@ -49,5 +49,5 @@ class ProductInOrder(models.Model):
         return "%s" % self.product.name
 
     class Meta:
-        verbose_name = 'Товар'
-        verbose_name_plural = 'Товары'
+        verbose_name = 'Товар в заказе'
+        verbose_name_plural = 'Товары в заказе'
