@@ -8,10 +8,22 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Электронный католог</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1 style="text-align: center ">Электронный католог</h1>
+    <h3>Адресная строка:</h3>
+    <p></p>
+    <h2>Категории:</h2>
+    {% for categ in cat %}
+    <div>
+        <h3>{{ categ }}</h3>
+        {% for br in Brand.objects.all %}
+            <p>br</p>
+        {% endfor %}
+    </div>
+    {% endfor %}
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
