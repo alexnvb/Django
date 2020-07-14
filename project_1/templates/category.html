@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+    {% for itm in item_by_cat %}
+        <div class="col">
+            <h4>{{ itm.brand }}</h4>
+            <h4>{{ itm.name }}</h4>
+            <img src="{{ itm.image.url }}" class="img-responsive" style="width: 250px; height: 200px">
+        </div>
+    {% endfor %}
+{% endblock %}

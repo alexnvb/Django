@@ -1,0 +1,11 @@
+ <div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Главная</a></li>
+            {% for c in category %}
+                <li class="breadcrumb-item"><a href="/{{ c.id }}">{{ c }}</li>
+            {% endfor %}
+
+            </ol>
+        </nav>
+ </div>
